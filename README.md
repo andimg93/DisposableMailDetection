@@ -13,3 +13,7 @@ The advantages of this package are therefore obvious:
 - The package with presumably the most deposited disposable mail addresses
 - No dependencies to various other packages
 
+Use it via composer:
+```bash
+composer require andimg93/disposable-mail-detection
+```
