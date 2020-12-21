@@ -2,4 +2,5 @@
 
 return [
     'mmgaklan.com',
+    'nowdigit.com',
 ];
