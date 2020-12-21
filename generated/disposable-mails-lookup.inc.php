@@ -1,7 +1,8 @@
 <?php
-/** !!! CAUTION !!!
-* >>> This file was automatized generated and should not be, in any case, manually modified! <<< */
+// !!! CAUTION !!!
+// >>> This file was automatized generated and should not be, in any case, manually modified! <<<
 return [
+    'mmgaklan.com' => true,
     '0-00.usa.cc' => true,
     '0-180.com' => true,
     '0-30-24.com' => true,
