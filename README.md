@@ -33,7 +33,7 @@ if (Verifier::isDisposableMail($emailToValidate)) {
 ```
 
 ### Your help is wanted
-Regarding the sources for all the fake mail providers, have a look at [updater.php](https://github.com/andimg93/DisposableMailDetection/blob/main/updater.php "updater.php")
+Regarding the sources for all the fake mail providers, have a look at [updater.php](https://github.com/andimg93/DisposableMailDetection/blob/main/updater.php#L9 "updater.php")
 
 If you can remember any other good source of fake mail providers, feel free to add them there and post a PR.
 
