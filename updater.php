@@ -16,7 +16,7 @@ $sources = [
     'https://raw.githubusercontent.com/nojacko/email-data-disposable/master/bin/disposable.txt'         => TYPE_TEXT,
 ];
 
-$disposableMailAddresses = ['mmgaklan.com'];
+$disposableMailAddresses = include __DIR__ . '/disposable-mails-blacklist.inc.php';
 foreach ($sources as $source => $sourceType) {
     if ($sourceType === TYPE_PHP) {
         // We could just do an eval on the returned php file/array but this would be risky - Dont want to trust the source so use regex
