@@ -17,3 +17,17 @@ Use it via composer:
 ```bash
 composer require andimg93/disposable-mail-detection
 ```
+
+**Usage**
+```php
+<?php
+
+use AndreasMaximilianGerum\DisposableMailDetection\Verifier;
+
+if (Verifier::isDisposableMail($emailToValidate)) {
+	// It's a disposable mail address!
+	// Throw exception or stop processing, nobody want fake mail providers.
+}
+
+// Else it is a proper mail address - Do what you want to do in this case.
+```
