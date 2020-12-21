@@ -1,0 +1,12 @@
+{
+    "name": "andimg93/disposable-mail-detection",
+    "description": "Temporary (disposable/throwaway) email detection library - Throwaway mail addresses are a plague, but one you don't have to worry about anymore. Covers about 130k fake mail providers!",
+    "keywords": ["fake", "email", "detection", "disposable", "throwaway", "mail", "provider", "temporary"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.3"
+    },
+    "autoload": {
+        "classmap": ["Verifier.php"]
+    }
+}
