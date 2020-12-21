@@ -1,6 +1,6 @@
 {
     "name": "disposable-mail-detection",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Temporary (disposable/throwaway) email detection library - Throwaway mail addresses are a plague, but one you don't have to worry about anymore. Covers about 130k fake mail providers!",
     "repository": {
         "type": "git",

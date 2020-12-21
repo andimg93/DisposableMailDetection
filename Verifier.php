@@ -12,7 +12,7 @@ class Verifier
      *
      * @return bool
      */
-    public function isDisposableMail(string $emailToValidate): bool
+    public static function isDisposableMail(string $emailToValidate): bool
     {
         $disposableMailsLookup = include __DIR__ . '/generated/disposable-mails-lookup.inc.php';
 
