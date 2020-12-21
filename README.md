@@ -38,3 +38,9 @@ Regarding the sources for all the fake mail providers, have a look at [updater.p
 If you can remember any other good source of fake mail providers, feel free to add them there and post a PR.
 
 Should you know no other sources, but got fake mail providers that are still missing? Then please add them to the list in [disposable-mails-blacklist.inc.php](https://github.com/andimg93/DisposableMailDetection/blob/main/disposable-mails-blacklist.inc.php "disposable-mails-blacklist.inc.php"). Just post a PR for it, I will look at it as soon as possible - Thanks for your help!
+
+To update the entire list, simply run the update script after your amendment.
+It works as follows:
+```bash
+php -n updater.php
+```
