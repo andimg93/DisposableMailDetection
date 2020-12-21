@@ -1,0 +1,30 @@
+{
+    "name": "disposable-mail-detection",
+    "version": "1.0.3",
+    "description": "Temporary (disposable/throwaway) email detection library - Throwaway mail addresses are a plague, but one you don't have to worry about anymore. Covers about 130k fake mail providers!",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/andimg93/DisposableMailDetection.git"
+    },
+    "keywords": [
+        "fake",
+        "email",
+        "detection",
+        "disposable",
+        "throwaway",
+        "mail",
+        "provider",
+        "temporary",
+        "domains"
+    ],
+    "maintainers": [
+        "Andreas Maximilian Gerum <andimg93@gmail.com> (https://lazyfox.de/)"
+    ],
+    "sponsors": [],
+    "contributors": [],
+    "author": "Andreas Maximilian Gerum <andimg93@gmail.com> (https://lazyfox.de/)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/andimg93/DisposableMailDetection/issues"
+    }
+}
