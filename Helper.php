@@ -18,7 +18,7 @@ class Helper
         }
 
         file_put_contents(
-            __DIR__ . '/generated/disposable-mails-lookup.inc.php',
+            self::DISPOSABLE_MAILS_LOOKUP_PATH,
             '<?php'
             . PHP_EOL . '// !!! CAUTION !!!'
             . PHP_EOL . '// >>> This file was automatized generated and should not be, in any case, manually modified! <<<'
@@ -36,10 +36,14 @@ class Helper
      */
     private function prepareDisposableMailLookup(array $disposableMailAddresses): array
     {
-        $preparedLookup = [];
+        $whitelistedMailProviders = include __DIR__ . '/disposable-mails-whitelist.inc.php';
 
+        $preparedLookup = [];
         foreach ($disposableMailAddresses as $disposableMailAddress) {
-            $preparedLookup[trim($disposableMailAddress)] = true;
+            // Performance is not an issue while generating the lookup, so it is sufficient to just define the providers as value based and thus perform an in_array check
+            if (!in_array($disposableMailAddress, $whitelistedMailProviders, true)) {
+                $preparedLookup[trim($disposableMailAddress)] = true;
+            }
         }
 
         return $preparedLookup;
