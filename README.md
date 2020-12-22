@@ -46,3 +46,4 @@ It works as follows:
 ```bash
 php -n updater.php
 ```
+*After Any Change (Source/Blacklist/Whitelist) The Lookup Has To Be Generated Again, As Just Described.*
