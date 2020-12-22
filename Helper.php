@@ -40,9 +40,11 @@ class Helper
 
         $preparedLookup = [];
         foreach ($disposableMailAddresses as $disposableMailAddress) {
+            $disposableMailAddress = strtolower(trim($disposableMailAddress));
+
             // Performance is not an issue while generating the lookup, so it is sufficient to just define the providers as value based and thus perform an in_array check
             if (!in_array($disposableMailAddress, $whitelistedMailProviders, true)) {
-                $preparedLookup[trim($disposableMailAddress)] = true;
+                $preparedLookup[$disposableMailAddress] = true;
             }
         }
 

@@ -16,7 +16,8 @@ class Verifier
     {
         $disposableMailsLookup = include __DIR__ . '/generated/disposable-mails-lookup.inc.php';
 
+        $domainToCheck = strtolower(substr(strrchr($emailToValidate, '@'), 1));
         return filter_var($emailToValidate, FILTER_VALIDATE_EMAIL) === false
-            || isset($disposableMailsLookup[substr(strrchr($emailToValidate, '@'), 1)]);
+            || isset($disposableMailsLookup[$domainToCheck]);
     }
 }
