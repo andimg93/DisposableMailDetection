@@ -12,6 +12,7 @@ The advantages of this package are therefore obvious:
 - Outstanding performance
 - The package with presumably the most deposited disposable mail addresses
 - No dependencies to various other packages
+- Entirely free of charge
 
 Get it via composer:
 ```bash
