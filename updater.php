@@ -1,4 +1,5 @@
 <?php
+ini_set('memory_limit', '1G');
 
 use AndreasMaximilianGerum\DisposableMailDetection\Helper;
 
