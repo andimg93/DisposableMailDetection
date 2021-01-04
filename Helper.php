@@ -48,6 +48,8 @@ class Helper
             }
         }
 
+        ksort($preparedLookup);
+
         return $preparedLookup;
     }
 

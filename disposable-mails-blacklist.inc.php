@@ -1,8 +1,12 @@
 <?php
 
 return [
+    'cocyo.com',
+    'girtipo.com',
+    'kakekbet.com',
+    'liaphoto.com',
     'mmgaklan.com',
-    'nowdigit.com',
     'nenekbet.com',
-    'kakekbet.com'
+    'nonicamy.com',
+    'nowdigit.com',
 ];
