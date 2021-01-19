@@ -9,4 +9,8 @@ return [
     'nenekbet.com',
     'nonicamy.com',
     'nowdigit.com',
+    'febula.com',
+    'serohiv.com',
+    'loopsnow.com',
+    'pashter.com',
 ];
