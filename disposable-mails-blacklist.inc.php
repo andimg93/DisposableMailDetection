@@ -13,4 +13,8 @@ return [
     'serohiv.com',
     'loopsnow.com',
     'pashter.com',
+    'eamarian.com',
+    'aiclbd.com',
+    '1adir.com',
+    'dashseat.com',
 ];
