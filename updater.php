@@ -14,7 +14,6 @@ $sources = [
     'https://raw.githubusercontent.com/nojacko/email-data-disposable/master/data/disposable.txt'        => TYPE_TEXT,
     'https://raw.githubusercontent.com/MattKetmo/EmailChecker/master/res/throwaway_domains.txt'         => TYPE_TEXT,
     'https://raw.githubusercontent.com/disposable/disposable-email-domains/master/domains.txt'          => TYPE_TEXT,
-    'https://raw.githubusercontent.com/nojacko/email-data-disposable/master/bin/disposable.txt'         => TYPE_TEXT,
     'https://gist.githubusercontent.com/adamloving/4401361/raw/temporary-email-address-domains'         => TYPE_TEXT,
     'https://raw.githubusercontent.com/vboctor/disposable_email_checker/master/data/domains.txt'        => TYPE_TEXT,
     'https://gist.githubusercontent.com/tbrianjones/5992856/raw/free_email_provider_domains.txt'        => TYPE_TEXT,
