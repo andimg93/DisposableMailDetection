@@ -19,6 +19,7 @@ $sources = [
     'https://raw.githubusercontent.com/vboctor/disposable_email_checker/master/data/domains.txt'        => TYPE_TEXT,
     'https://gist.githubusercontent.com/tbrianjones/5992856/raw/free_email_provider_domains.txt'        => TYPE_TEXT,
     'https://raw.githubusercontent.com/Propaganistas/Laravel-Disposable-Email/master/domains.json'      => TYPE_JSON,
+    'https://gist.githubusercontent.com/michenriksen/8710649/raw/disposable-email-provider-domains'     => TYPE_TEXT,
 ];
 
 $disposableMailAddresses = include __DIR__ . '/disposable-mails-blacklist.inc.php';
