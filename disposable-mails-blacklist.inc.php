@@ -3812,6 +3812,7 @@ return [
     'resgedvgfed.tk',
     'resource.calendar.google.com',
     'resumemail.com',
+    'revutap.com',
     'rezai.com',
     'rhyta.com',
     'richmondhill.com',
