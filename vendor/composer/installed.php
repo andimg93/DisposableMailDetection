@@ -1,24 +1,23 @@
-<?php return array (
-  'root' => 
-  array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
-    'aliases' => 
-    array (
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => '3f672ffd36745d861db9bd7291926b86391c5e45',
+        'name' => 'andimg93/disposable-mail-detection',
+        'dev' => true,
     ),
-    'reference' => 'c248e26ee238ed3e9a0bcce248e00a9ff3334369',
-    'name' => 'andimg93/disposable-mail-detection',
-  ),
-  'versions' => 
-  array (
-    'andimg93/disposable-mail-detection' => 
-    array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'c248e26ee238ed3e9a0bcce248e00a9ff3334369',
+    'versions' => array(
+        'andimg93/disposable-mail-detection' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => '3f672ffd36745d861db9bd7291926b86391c5e45',
+            'dev_requirement' => false,
+        ),
     ),
-  ),
 );
