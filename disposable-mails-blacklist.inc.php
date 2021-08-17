@@ -3471,6 +3471,7 @@ return [
     'nicegal.com',
     'nicholastse.net',
     'nicolastse.com',
+    'nicoric.com',
     'nightmail.com',
     'nikopage.com',
     'nimail.com',
