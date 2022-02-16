@@ -3,6 +3,12 @@
 // Here, mail addresses are entered that are not disposable mail addresses but are incorrectly identified as such by the defined sources.
 // Performance is not an issue while generating the lookup, so it is sufficient to just define the providers as value based and thus perform an in_array check
 return [
+    // Useless provider notations, since they are not provider notations per se - we whitelist them to not write them into the generated lookup:
+    '',
+    '.',
+    '.impo-text',
+
+    // Whitelisted mail providers:
     'facebook.com',
     'facebookmail.com',
     'fastmail.ca',

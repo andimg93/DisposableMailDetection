@@ -22,23 +22,32 @@ $sources = [
 ];
 
 $disposableMailAddresses = include __DIR__ . '/disposable-mails-blacklist.inc.php';
+
+require_once __DIR__ . '/Helper.php';
+$helper = new Helper();
+
 foreach ($sources as $source => $sourceType) {
     if ($sourceType === TYPE_PHP) {
         // We could just do an eval on the returned php file/array but this would be risky - Dont want to trust the source so use regex
-        preg_match_all('/\'(.*)\',/', file_get_contents($source), $matches, PREG_SET_ORDER, 0);
+        preg_match_all('/\'(.*)\',/', $helper->fetchContent($source), $matches, PREG_SET_ORDER, 0);
         $disposableMailAddresses = array_merge($disposableMailAddresses, array_column($matches, 1));
 
         continue;
     }
 
     if ($sourceType === TYPE_JSON) {
-        $disposableMailAddresses = array_merge($disposableMailAddresses, json_decode(file_get_contents($source)));
+        $disposableMailAddresses = array_merge($disposableMailAddresses, json_decode($helper->fetchContent($source)));
 
         continue;
     }
 
     if ($sourceType === TYPE_TEXT) {
-        $disposableMailAddresses = array_merge($disposableMailAddresses, file($source, FILE_IGNORE_NEW_LINES));
+        $separator = '---#|#---';
+        $disposableMailAddresses = array_merge($disposableMailAddresses, explode($separator, str_replace([
+            "\r\n",
+            "\r",
+            "\n"
+        ], $separator, $helper->fetchContent($source))));
 
         continue;
     }
@@ -46,6 +55,4 @@ foreach ($sources as $source => $sourceType) {
     throw new \RuntimeException('Unknown source type: "' . $sourceType . '" for source: "' . $source . '"');
 }
 
-require_once __DIR__ . '/Helper.php';
-$helper = new Helper();
 $helper->writeLookup($disposableMailAddresses);
